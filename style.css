@@ -1,0 +1,501 @@
+body{
+	margin: 0;
+	background: rgb(255, 210, 235);
+	overflow-x: hidden;
+}
+.main0{
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+}
+.main0 img{
+	width: 100%;
+	height: 100%;
+}
+.main{
+	width: 100vw;
+	height: 100vh;
+	overflow-x: hidden;
+	position: relative;
+}
+.zakrito{
+	height: 100vh;
+	width: 35vw;
+	background-color:  rgb(255, 210, 235);
+	margin: 0 auto;
+	transform-origin: bottom center;
+	transform: scaleY(1);
+	animation: wow 2s linear;
+	animation-fill-mode: forwards;
+	animation-play-state: paused;
+	position: relative;
+	z-index: 15;
+}
+.main_img{
+	height: 90vh;
+	display: block;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	position: absolute;
+	z-index: 10;
+	animation: edu 2s linear;
+	animation-delay: 6s;
+	animation-fill-mode: forwards;
+	animation-play-state: paused;
+}
+.zad{
+	width: 200vw;
+	position: absolute;
+	font-size: 30vh;
+	font-family: 'Rubik Mono One', sans-serif;
+	text-align: center;
+	color: white;
+	margin: 35vh 0;
+	z-index: 1;
+	animation: woohoo 10s linear;
+	animation-delay: 0.7s;
+	animation-play-state: paused;
+	left: -190vw;
+}
+.osnovnoi{
+	position: absolute;
+	width: 70%;
+	margin: 9vh -72vw;
+	font-size: 6vh;
+	text-align: justify;
+	font-family: 'Kelly Slab', cursive;
+	z-index: 3;
+	animation: texte 2s linear;
+	animation-fill-mode: forwards;
+	animation-play-state: paused;
+	animation-delay: 6s;
+}
+@keyframes wow{
+	0%{
+		transform: scaleY(1);
+	}
+	100%{
+		transform: scaleY(0);
+	}
+}
+@keyframes woohoo{
+	0%{
+		left: -190vw;
+	}
+	100%{
+		left: 290vw;
+	}
+}
+@keyframes edu{
+	0%{
+		transform:translate(-50%, -50%);
+	}
+	100%{
+		transform:translate(200%, -50%);
+	}
+}
+@keyframes texte{
+	0%{
+		margin-left: -72vw;
+	}
+	100%{
+		margin-left: 2vw;
+	}
+}
+
+.main2{
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+}
+.textik1{
+	position: absolute;
+	width: 50%;
+	margin: 4vh -55vw;
+	font-size: 4vh;
+	font-family: 'Kelly Slab', cursive;
+	animation: vihod1 1.2s linear;
+	animation-fill-mode: forwards;
+	animation-play-state: paused;
+}
+.textik2{
+	position: absolute;
+	width: 55%;
+	font-size: 4vh;
+	font-family: 'Kelly Slab', cursive;
+	text-align: right;
+	right: -60vw;
+	bottom: 4vh;
+	animation: vihod2 1.2s linear;
+	animation-fill-mode: forwards;
+	animation-play-state: paused;
+}
+@keyframes vihod1{
+	0%{
+		margin: 4vh -55vw;
+	}
+	100%{
+		margin: 4vh 2vw;
+	}
+}
+@keyframes vihod2{
+	0%{
+		right: -60vw;
+	}
+	100%{
+		right: 2vw;
+	}
+}
+.flip-container {
+	perspective: 1000;
+	position: absolute;
+}
+ 
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+	transform: rotateX(-180deg);
+}
+
+.flip-container, .front, .back {
+	width: 59vh;
+	height: 33vh;
+}
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: relative;
+	transform-origin: 100% 16.5vh; /* half of height */
+}
+.front, .back {
+	backface-visibility: hidden; 
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.front {
+	z-index: 2;
+}
+.back {
+	transform: rotateX(180deg);
+}
+.front img, .back img{
+	height: 33vh;
+}
+#img1{
+	bottom: 12vh;
+	left: 2vw;
+	opacity: 0;
+	transition: 0.2s;
+	animation: prov1 2s linear;
+	animation-fill-mode: forwards;
+	animation-delay: 0.6s;
+	animation-play-state: paused;
+}
+#img2{
+	top:40%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	opacity: 0;
+	transition: 0.2s;
+	animation: prov2 2s linear;
+	animation-fill-mode: forwards;
+	animation-delay: 1.2s;
+	animation-play-state: paused;
+}
+#img3{
+	top: 4vh;
+	right: 2vw;
+	opacity: 0;
+	transition: 0.2s;
+	animation: prov3 2s linear;
+	animation-fill-mode: forwards;
+	animation-delay: 1.8s;
+	animation-play-state: paused;
+}
+@keyframes prov1{
+	0%{
+		bottom: 12vh;
+		opacity: 0;
+	}
+	100%{
+		bottom: 4vh;
+		opacity: 1;
+	}
+}
+@keyframes prov2{
+	0%{
+		top:40%;
+		opacity: 0;
+	}
+	100%{
+		top:50%;
+		opacity: 1;
+	}
+}
+@keyframes prov3{
+	0%{
+		top: -8vh;
+		opacity: 0;
+	}
+	100%{
+		top: 4vh;
+		opacity: 1;
+	}
+}
+
+.main3{
+	width: 100vw;
+	height: 100vh;
+	overflow-x: hidden;
+	position: relative;
+}
+.zakritoo{
+	height: 100vh;
+	width: 40vw;
+	background-color:  rgb(255, 210, 235);
+	margin: 0 auto;
+	transform-origin: bottom center;
+	transform: scaleY(1);
+	animation: woww 2s linear;
+	animation-fill-mode: forwards;
+	animation-play-state: paused;
+	position: relative;
+	z-index: 15;
+}
+.main_imgg{
+	height: 90vh;
+	display: block;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	position: absolute;
+	z-index: 10;
+	animation: eduu 2s linear;
+	animation-delay: 7s;
+	animation-fill-mode: forwards;
+	animation-play-state: paused;
+}
+.zadd{
+	width: 100vw;
+	position: absolute;
+	font-size: 30vh;
+	font-family: 'Rubik Mono One', sans-serif;
+	text-align: center;
+	color: white;
+	margin: 35vh 0;
+	z-index: 1;
+	animation: woohooo 10s linear;
+	animation-delay: 0.7s;
+	animation-play-state: paused;
+	right: -190vw;
+}
+.osnovnoii{
+	position: absolute;
+	width: 58.5%;
+	top: 16vh;
+	right: -72vw;
+	font-size: 6vh;
+	text-align: justify;
+	font-family: 'Kelly Slab', cursive;
+	z-index: 3;
+	animation: textee 2s linear;
+	animation-fill-mode: forwards;
+	animation-play-state: paused;
+	animation-delay: 7s;
+}
+@keyframes woww{
+	0%{
+		transform: scaleY(1);
+	}
+	100%{
+		transform: scaleY(0);
+	}
+}
+@keyframes woohooo{
+	0%{
+		right: -190vw;
+	}
+	100%{
+		right: 290vw;
+	}
+}
+@keyframes eduu{
+	0%{
+		transform:translate(-50%, -50%);
+	}
+	100%{
+		transform:translate(-133.5%, -50%);
+	}
+}
+@keyframes textee{
+	0%{
+		right: -72vw;
+	}
+	100%{
+		right: 2vw;
+	}
+}
+
+.main4{
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	overflow: hidden;
+}
+.textik3{
+	position: absolute;
+	width: 57%;
+	top: 4vh;
+	right: -62vw;
+	font-size: 4vh;
+	text-align: right;
+	font-family: 'Kelly Slab', cursive;
+	animation: vihod3 1.2s linear;
+	animation-fill-mode: forwards;
+	animation-play-state: paused;
+}
+.textik4{
+	position: absolute;
+	width: 55.5%;
+	font-size: 4vh;
+	font-family: 'Kelly Slab', cursive;
+	left: -60vw;
+	bottom: 4vh;
+	animation: vihod4 1.2s linear;
+	animation-fill-mode: forwards;
+	animation-play-state: paused;
+}
+@keyframes vihod3{
+	0%{
+		right: -62vw;
+	}
+	100%{
+		right: 2vw;
+	}
+}
+@keyframes vihod4{
+	0%{
+		left: -60vw;
+	}
+	100%{
+		left: 2vw;
+	}
+}
+
+.krugg{
+	width: 60vh;
+	height: 60vh;
+	position: absolute;
+	top: 4vh;
+	left: 12vh;
+	transition: 0.3s;
+	transform: rotate(0deg);
+	animation: hoba 2s linear;
+	animation-play-state: paused;
+}
+@keyframes hoba{
+	0%{
+		opacity: 0;
+		transform: rotate(0deg);
+	}
+	100%{
+		opacity: 1;
+		transform: rotate(180deg);
+	}
+}
+.krugg1{
+	position: absolute;
+	width: 54vh;
+	height: 54vh;
+	border-radius: 50%;
+	top: 7vh;
+	left: 15vh;
+	transition: 0.3s;
+	opacity: 0;
+	transform: scale(0.1);
+	transform-origin: center center;
+	animation: boba 1.5s linear;
+	animation-delay: 1.2s;
+	animation-fill-mode: forwards;
+	animation-play-state: paused;
+}
+@keyframes boba{
+	0%{
+		opacity: 0;
+		transform: scale(0.1);
+	}
+	100%{
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+.krugg2{
+	position: absolute;
+	width: 54vh;
+	height: 54vh;
+	border-radius: 50%;
+	top: 7vh;
+	left: 15vh;
+	opacity: 0;
+	transition: 0.3s;
+}
+.krug:hover .krugg2{
+	opacity: 1;
+}
+.krug:hover .krugg{
+	transform: rotate(-60deg);
+}
+.kruggg {
+	width: 60vh;
+	height: 60vh;
+	position: absolute;
+	right: 12vh;
+	bottom: 4vh;
+	transition: 0.3s;
+	transform: rotate(-60deg);
+	animation: hobaa 2s linear;
+	animation-play-state: paused;
+}
+@keyframes hobaa{
+	0%{
+		opacity: 0;
+		transform: rotate(120deg);
+	}
+	100%{
+		opacity: 1;
+		transform: rotate(-60deg);
+	}
+}
+.krugg11{
+	position: absolute;
+	width: 54vh;
+	height: 54vh;
+	border-radius: 50%;
+	right: 15vh;
+	bottom: 7vh;
+	transition: 0.3s;
+	opacity: 0;
+	transform: scale(0.1);
+	transform-origin: center center;
+	animation: boba 1.5s linear;
+	animation-delay: 1.2s;
+	animation-fill-mode: forwards;
+	animation-play-state: paused;
+}
+.krugg22{
+	position: absolute;
+	width: 54vh;
+	height: 54vh;
+	border-radius: 50%;
+	right: 15vh;
+	bottom: 7vh;
+	opacity: 0;
+	transition: 0.3s;
+}
+.krug:hover .krugg22{
+	opacity: 1;
+}
+.krug:hover .kruggg{
+	transform: rotate(0deg);
+}
+

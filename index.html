@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Kelly+Slab&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<title>002</title>
+</head>
+<body>
+	<div class="main0">
+		<video width="100%" height="100%" autoplay loop muted><source src="images/H O P _ Darling in the franXX.mp4"></video> 
+	</div>
+	<div class="main">
+		<div class="zad">КОД02 КОД02</div>
+		<div class="osnovnoi"><b>Код: 002 (Ноль Два)</b><br><br>Персонаж из аниме Милый во Франксе или же Darling in the FranXX.<br>Эта девочка является пилотом элитного подразделения специальных сил, принадлежащая специальной охранной единице непосредственно под командованием APE.<br>Она не является человеком из-за чего многие опасаются её, но при этом она является паразитом.</div>
+		<img class="main_img" src="images/Ноль_Два.png" alt="">
+		<div class="zakrito"></div>
+	</div>
+	<div class="main2">
+		<div class="textik1">Франксы – большие боевые роботы женского облика, созданные для борьбы с нападающими на человечество ревозаврами. Франксы управляются строго двумя пилотами-паразитами, пестиком – инженером женского пола, и тычинкой – рулевым мужского пола.</div>
+		<div class="textik2">02 может как пилотировать с пилотом, так и вести франкс в бой в одиночку, что расходует у неё большие силы, которые она восполняет убивая своих тычинок. Обычно её партнёры не выдерживали больше трёх полётов с ней.<br>Это правило нарушил только один парень – Хиро.
+		</div>
+		<div id="img1" class="flip-container" ontouchstart="this.classList.toggle('hover');">
+			<div class="flipper">
+				<div class="front">
+					<img src="images/02.png" alt="">
+				</div>
+				<div class="back">
+					<img src="images/noldva.png" alt="">
+				</div>
+			</div>
+		</div>
+		<div id="img2" class="flip-container" ontouchstart="this.classList.toggle('hover');">
+			<div class="flipper">
+				<div class="front">
+					<img src="images/unnamed.png" alt="">
+				</div>
+				<div class="back">
+					<img src="images/1523451868129044504.jpg" alt="">
+				</div>
+			</div>
+		</div>
+		<div id="img3" class="flip-container" ontouchstart="this.classList.toggle('hover');">
+			<div class="flipper">
+				<div class="front">
+					<img src="images/3dbccc2a32ab245eb618ba4b0a6777d103f87d88v2_hq.jpg" alt="">
+				</div>
+				<div class="back">
+					<img src="images/unnamed.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="main3">
+		<div class="zadd">СТРЕЛИЦИЯ</div>
+		<div class="osnovnoii"><b>Стрелиция</b><br><br>Специальный франкс, пестиком которого может быть только Ноль Два. Единственный кто может выдержать более 3 поездок в Стрелиции, это Хиро, так как он вылизал кровь 002 в детстве, когда та содрала коленки после падения</div>
+		<img class="main_imgg" src="images/Стрелиция.png" alt="">
+		<div class="zakritoo"></div>
+	</div>
+	<div class="main4">
+		<div class="textik3">А вот и тот самый Хиро. Отношения Ноль Два с ним постоянно разиваются, потому что они единственные друг у друга могут быть партнёрами во франксе.В последствии раскрывается то, что в детстве они были знакомы и пытались сбежать из лагеря. Но их попытка побега провалилась и им обоим стёрли память.</div>
+		<div class="textik4">В детстве она выглядела куда более похожей на монстра, с красной кожей, длинными ногтями и зубами, а кровь ее была синего цвета. Рога были намного больше по сравнению с головой. Код 002 оказывается клоном принцессы рёвозавров, созданная доктором Франксом.</div>
+		<div class="krug">
+			<img class="krugg" src="images/Frame 1.png" alt="">
+			<img class="krugg1" src="images/scale_1200.jfif" alt="">
+			<img class="krugg2" src="images/darling-in-the-franxx-2-sezon-4.jpg" alt="">
+		</div>
+		<div class="krug">
+			<img class="kruggg" src="images/Frame 1.png" alt="">
+			<img class="krugg11" src="images/002.png" alt="">
+			<img class="krugg22" src="images/принцесса.jpg" alt="">
+		</div>
+		
+	</div>
+<script>
+	var el = $('.main');
+	$(window).scroll(function(){
+    if ( $(this).scrollTop() > el.offset().top - 100) {
+		$('.zakrito').css('animation-play-state', 'running');
+		$('.zad').css('animation-play-state', 'running');
+		$('.main_img').css('animation-play-state', 'running');
+		$('.osnovnoi').css('animation-play-state', 'running');
+		}
+	});
+	var ell = $('.main2');
+	$(window).scroll(function(){
+    if ( $(this).scrollTop() > ell.offset().top - 100) {
+		$('.textik1').css('animation-play-state', 'running');
+		$('.textik2').css('animation-play-state', 'running');
+		$('#img1').css('animation-play-state', 'running');
+		$('#img2').css('animation-play-state', 'running');
+		$('#img3').css('animation-play-state', 'running');
+		};
+	});
+	var elll = $('.main3');
+	$(window).scroll(function(){
+    if ( $(this).scrollTop() > elll.offset().top - 100) {
+		$('.zakritoo').css('animation-play-state', 'running');
+		$('.zadd').css('animation-play-state', 'running');
+		$('.main_imgg').css('animation-play-state', 'running');
+		$('.osnovnoii').css('animation-play-state', 'running');
+		}
+	});
+	var ellll = $('.main4');
+	$(window).scroll(function(){
+    if ( $(this).scrollTop() > ellll.offset().top - 100) {
+		$('.textik3').css('animation-play-state', 'running');
+		$('.textik4').css('animation-play-state', 'running');
+		$('.krugg').css('animation-play-state', 'running');
+		$('.krugg1').css('animation-play-state', 'running');
+		$('.kruggg').css('animation-play-state', 'running');
+		$('.krugg11').css('animation-play-state', 'running');
+		};
+	});
+</script>
+</body>
+</html>
